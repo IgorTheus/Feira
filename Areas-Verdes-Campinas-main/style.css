@@ -1,0 +1,290 @@
+/* 
+   O símbolo * significa "tudo".
+   Aqui estamos definindo um estilo padrão para toda a página.
+*/
+* {
+    padding: 0; /* Tira o espaço interno de todos os elementos */
+    margin: 0; /* Tira o espaço externo de todos os elementos */
+    box-sizing: border-box; /* Facilita o controle do tamanho dos blocos */
+    font-family: 'Roboto', sans-serif; /* Usa a fonte Roboto em todo o site */
+}
+
+/* 
+   Estilo para todos os títulos <h2> 
+*/
+h2 {
+    text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
+    font-size: 32px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* 
+   Seção com a imagem de introdução
+   Define tamanho e posicionamento
+*/
+.opac {
+    height: 650px; /* Altura da seção */
+    width: 100%; /* Largura total da tela */
+    position: relative; /* Permite posicionar outros elementos dentro dela */
+}
+
+/* 
+   Camada escura por cima da imagem (efeito de “filtro”)
+*/
+.overflow {
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor preta com 40% de transparência */
+    position: absolute; /* Fica “por cima” da imagem */
+    top: 0;
+    left: 0;
+    z-index: 7; /* Define a ordem das camadas — quanto maior, mais “na frente” */
+}
+
+/* 
+   Estilo geral para todas as imagens
+*/
+img {
+    width: 100%;
+    height: 650px;
+    z-index: -2; /* Fica atrás de outros elementos */
+}
+
+/* 
+   O contêiner que guarda o título da introdução
+*/
+.intro-title {
+    position: relative;
+}
+
+/* 
+   Título principal “Green Maps” 
+   Centralizado em cima da imagem da floresta
+*/
+.intro-title h1 {
+    position: absolute; /* Permite colocar o texto em qualquer parte da tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
+    color: rgb(0, 255, 0); /* Verde neon */
+    z-index: 8; /* Fica acima da imagem e da camada escura */
+    font-size: 64px; /* Tamanho grande do título */
+    padding: 0.2rem 1rem; /* Espaço interno */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: 5px 5px 50px black; /* Sombra em volta do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* 
+   Seção “home” (a parte com o fundo e o texto de apresentação)
+*/
+.home {
+    width: 100%;
+    background-image: url('bg.png'); /* Imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+}
+
+/* 
+   Define o conteúdo interno da seção “home”
+   Usa “flexbox” para organizar os elementos na tela
+*/
+.home-content {
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 100%;
+}
+
+/* 
+   Bloco de texto “O QUE É?”
+*/
+.intro-info {
+    width: 50%; /* Metade da largura da tela */
+    padding: 4rem; /* Espaçamento interno grande */
+}
+
+/* 
+   Deixa o título verde
+*/
+.intro-info h2 {
+    color: rgb(0, 255, 0);
+}
+
+/* 
+   Imagem da árvore dentro do container
+*/
+.tree-container {
+    width: 400px;
+    height: 400px;
+}
+
+/* 
+   Bloco “Quem Somos Nós?”
+   Fundo branco para destacar o texto
+*/
+.about-content {
+    width: 50%;
+    padding: 4rem;
+    background-color: white;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: rgb(0, 255, 0);
+}
+
+/* 
+   Seção “Como Funciona”
+*/
+.work {
+    width: 100%;
+}
+
+/* 
+   Configura o conteúdo dessa seção
+*/
+.work-content {
+    width: 80%; /* Centraliza com margem lateral */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.work-content h2 {
+    padding-top: 1rem;
+    color: rgb(0, 255, 0);
+}
+
+/* 
+   Parágrafo descritivo da seção “Como Funciona”
+*/
+.desc {
+    padding: 1rem 0;
+}
+
+/* 
+   Contêiner com todos os "cards" (os passos 1, 2, 3, 4)
+*/
+.card-container {
+    display: flex; /* Coloca os cards lado a lado */
+    gap: 30px; /* Espaço entre eles */
+    margin: 2rem 0;
+}
+
+/* 
+   Cada card (passo)
+*/
+.card-single {
+    display: flex;
+    flex-direction: column; /* Elementos dentro do card em coluna */
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 20px 20px 14px 0px rgb(205 205 205 / 75%); /* Sombra leve */
+}
+
+/* 
+   Número do passo (1, 2, 3, 4)
+*/
+.card-single h4 {
+    font-size: 30px;
+    padding: 1rem;
+    color: rgb(0, 255, 0);
+}
+
+/* 
+   Destaca partes importantes do texto dentro do card
+*/
+.card-single span {
+    color: rgb(7, 172, 7);
+}
+
+/* 
+   Título “ACESSE O MAPA DE PRAÇAS”
+*/
+.access {
+    padding: 2rem 0;
+    color: rgb(0, 255, 0);
+}
+
+/* 
+   Imagem clicável do mapa
+*/
+.maps {
+    width: 900px;
+    height: 400px;
+}
+
+/* 
+   --- AQUI COMEÇAM AS REGRAS DE "RESPONSIVIDADE" ---
+   Essas partes fazem o site se adaptar para telas menores (celulares, tablets, etc.)
+*/
+
+/* 
+   Se a tela for menor que 1650px, remove a imagem de fundo da seção “home”
+*/
+@media screen and (max-width: 1650px) {
+    .home {
+        background-image: none;
+    }
+}
+
+/* 
+   Se a tela for menor que 1240px (notebooks, tablets em pé)
+*/
+@media screen and (max-width: 1240px) {
+
+    .intro-info {width: 80%;}
+    .about-content {width: 80%;}
+
+    /* Os cards passam a ficar um abaixo do outro */
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-single {
+        width: 80%;
+        padding: 5rem;
+    }
+
+    /* Limita a largura do texto dentro dos cards */
+    .card-single p {
+        width: 60%;
+    }
+
+    /* Centraliza o link (imagem clicável) */
+    a {text-align: center;}
+
+    /* Reduz o tamanho do mapa */
+    .maps {
+        width: 90%;
+    }
+}
+
+/* 
+   Se a tela for menor que 500px (celulares)
+*/
+@media screen and (max-width: 500px){
+    h2 {text-align: left;} /* Títulos alinhados à esquerda */
+
+    .intro-info {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .tree-container {width: 80%;}
+
+    .about-content {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    /* Ajusta os cards para caberem bem em telas pequenas */
+    .work-content .card-single {width: 100%;}
+    .work-content .card-single p {width: 100%;}
+}

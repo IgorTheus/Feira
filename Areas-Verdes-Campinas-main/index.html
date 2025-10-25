@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define que o documento é HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Faz com que o site funcione bem em celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Conexões com o site das fontes do Google (para deixar o texto bonito) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Escolhe a fonte "Roboto" para o texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Liga o arquivo de estilos (CSS), que define as cores, tamanhos, fontes, etc. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Green Maps</title>
+</head>
+<body>
+    <!-- O conteúdo principal da página começa aqui -->
+    <main>
+
+        <!-- PRIMEIRA SEÇÃO: introdução do site -->
+        <section class="intro-section">
+
+            <div class="intro-title">
+                <div class="opac">
+                    <!-- "overflow" pode controlar como a imagem aparece na tela -->
+                    <div class="overflow"></div>
+                    <!-- Imagem de fundo da introdução -->
+                    <img src="floresta-blur.png" alt="Imagem de floresta">
+                </div>
+                <!-- Título principal do site -->
+                <h1>Green Maps</h1>
+            </div>
+        </section>
+
+        <!-- SEGUNDA SEÇÃO: explicação sobre o projeto -->
+        <section class="home">
+            <div class="home-content">
+
+                <!-- Parte que explica o que é o projeto -->
+                <div class="intro-info">
+                    <h2>O QUE É?</h2>
+                    <p>
+                        O Green Maps é uma ferramenta digital inovadora, 
+                        criada para facilitar o acesso a áreas verdes e 
+                        praças em Campinas. Nossa plataforma utiliza a 
+                        tecnologia do Google Earth para ajudar pessoas 
+                        com deficiências físicas e cognitivas a descobrirem
+                        e explorarem os espaços públicos da cidade de 
+                        maneira acessível e interativa.
+                        Acreditamos que todos merecem a oportunidade de se conectar 
+                        com a natureza e aproveitar os benefícios das áreas verdes, 
+                        sem obstáculos ou dificuldades. Com o Green Maps, a 
+                        experiência de visitar esses locais fica mais fácil, 
+                        agradável e personalizada.
+                    </p>
+                </div>
+
+                <!-- Imagem decorativa de uma árvore -->
+                <img src="arvore-container.png" alt="Árvore no meio do container" class="tree-container">
+
+                <!-- Parte sobre a equipe que criou o projeto -->
+                <div class="about-content">
+                    <h2>Quem Somos Nós?</h2>
+                    <p>
+                        Somos uma equipe de profissionais apaixonados por acessibilidade 
+                        e pela criação de soluções tecnológicas que impactam 
+                        positivamente a vida das pessoas. Nosso projeto nasceu 
+                        da vontade de oferecer uma ferramenta simples, prática e 
+                        eficiente para ajudar a promover a inclusão e o bem-estar 
+                        de todos. Nosso trabalho é fundamentado no compromisso com a
+                        inovação, com a acessibilidade e com o respeito às 
+                        necessidades de cada indivíduo. Acreditamos que, 
+                        através da união da tecnologia com a conscientização sobre
+                        acessibilidade, podemos fazer a diferença na vida de muitas
+                        pessoas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERCEIRA SEÇÃO: explicando como o sistema funciona -->
+        <section class="work">
+            <div class="work-content">
+                <h2>Como Funciona?</h2>
+
+                <!-- Pequena descrição introdutória -->
+                <p class="desc">
+                    O Green Maps utiliza a API do Google Earth para marcar 
+                    pontos estratégicos em Campinas, <br> <!-- <br> pula uma linha -->
+                    como praças e áreas verdes, em um mapa interativo. Veja como é fácil:
+                </p>
+                
+                <!-- Contêiner com os "passos" explicando o funcionamento -->
+                <div class="card-container">
+
+                    <!-- Passo 1 -->
+                    <div class="card-single">
+                        <h4>1</h4>
+                        <p>
+                            <span>Navegue pelo Mapa:</span> Ao acessar nossa plataforma, 
+                            você verá um mapa de Campinas com pontos de interesse, 
+                            como praças, parques e outros locais de lazer.
+                        </p>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="card-single">
+                        <h4>2</h4>
+                        <p>
+                            <span>Clique no Ponto de Interesse:</span> Ao clicar em um ponto no mapa, 
+                            o local recebe um zoom automático para que você tenha uma visão 
+                            detalhada do espaço.
+                        </p>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="card-single">
+                        <h4>3</h4>
+                        <p>
+                            <span>Visualização de 360°:</span> O mapa gira para fornecer uma visão geral 
+                            do local, permitindo que você tenha uma ideia clara de como é 
+                            o ambiente e sua acessibilidade.
+                        </p>
+                    </div>
+
+                    <!-- Passo 4 -->
+                    <div class="card-single">
+                        <h4>4</h4>
+                        <p>
+                            <span>Redirecionamento ao Google Maps:</span> Após 10 segundos de visualização, 
+                            o usuário será automaticamente redirecionado ao Google Maps, onde 
+                            poderá obter direções precisas e todas as informações adicionais 
+                            sobre o trajeto até o local.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Título chamando o usuário para acessar o mapa -->
+                <h2 class="access">ACESSE O MAPA DE PRAÇAS</h2>
+
+                <!-- Imagem clicável que leva para outra página chamada "green-maps.html" -->
+                <a href="green-maps.html">
+                    <img src="acesso.png" alt="Imagem de demonstração da application" class="maps">
+                </a>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
